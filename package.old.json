@@ -3,8 +3,11 @@
   "source": "src/index.html",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
   },
   "keywords": [],
   "author": "",
