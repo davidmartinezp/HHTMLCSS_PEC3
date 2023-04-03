@@ -1,0 +1,159 @@
+/* ---------------------------------------------------------------Estilos comunes */
+/* Estilos para el encabezado */
+body{
+  font-family: 'Hind', sans-serif;
+  margin:0;
+}
+main
+{
+  width: 1000px;
+  max-width: 80%;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 3em;
+}
+nav {
+  text-align: center; /* Centrar horizontalmente los elementos del menú */
+}
+
+nav ul {
+  list-style: none; /* Eliminar los estilos por defecto de la lista */
+  margin: 0; /* Eliminar el margen por defecto de la lista */
+  padding: 0; /* Eliminar el relleno por defecto de la lista */
+  
+}
+
+nav li {
+  font-weight: bold;
+  font-size: 1.1em;
+  display: inline-block; /* Mostrar los elementos uno al lado del otro */
+}
+
+nav a, h1 a {
+  color: #fff; /* Color del texto del menú */
+  display: block; /* Convertir el elemento de enlace en un elemento de bloque para que ocupe todo el ancho del elemento padre */
+  padding: 10px 20px; /* Añadir relleno alrededor del texto del enlace */
+  text-decoration: none; /* Eliminar el subrayado del enlace */
+}
+
+h1 {
+  color: white;
+}
+nav a:hover
+{
+  color: lightblue;
+}
+
+/* ---------------------------------------------------------------Estilos portada */
+/* Estilos para el título principal */
+#Portada h1 {
+  
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+}
+
+#Portada h1 p:first-child{
+  font-size: 0.3em;
+  text-align: center;
+}
+#Portada h1 p:nth-of-type(2){
+  margin-top: -0.7em;
+}
+
+#Portada
+{
+  background-color: black;
+}
+
+/* Estilos para la imagen de fondo */
+#ImagenPortada {
+  
+  opacity: 0.7;
+  background-color: Black;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  Z-index: -1;
+  transform: scale(1.1, 1.1);
+  transition: background-image 0.5s linear;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.1, 1.1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1.1, 1.1);
+  }
+}
+/* ---------------------------------------------------------------Estilos el pueblo */
+#elpueblo header
+{
+  background-image: url("../static/Mier2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#elpueblo h1
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+  height: 60vh;
+  width: 100vw;
+  margin: 0;
+  
+}
+
+#elpueblo h1 p:first-child{
+  font-size: 0.5em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+#elpueblo h1 p:nth-of-type(2){
+  margin-top: -0.5em;
+  font-size:2em;
+}
+
+#elpueblo .container
+{
+  display: flex;
+  flex-direction: column; /* horizontal por defecto */
+  gap: 30px;
+}
+#elpueblo .imageAndText {
+  display: flex;
+  flex-direction: row; /* horizontal por defecto */
+  gap: 10px;
+}
+
+#elpueblo .image {
+  flex-basis: 50%; /* ocupa el 50% del ancho del contenedor */
+}
+#elpueblo .image img{
+  max-width: 100%;
+}
+
+#elpueblo .text {
+  flex-basis: 50%; /* ocupa el 50% del ancho del contenedor */
+}
+
+@media screen and (max-width: 768px) {
+  #elpueblo .imageAndText {
+    flex-direction: column; /* cambia a vertical */
+  }
+  
+  #elpueblo .image, #elpueblo .text {
+    flex-basis: 100%; /* ocupa todo el ancho del contenedor */
+  }
+}
