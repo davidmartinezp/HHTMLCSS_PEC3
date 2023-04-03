@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  font-family: Hind, sans-serif;
+}
+
+main {
+  width: 1000px;
+  max-width: 80%;
+  margin: 3em auto 0;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  font-size: 1.1em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+nav a, h1 a {
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+h1 {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #add8e6;
+}
+
+#Portada h1 {
+  font-size: 5em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Portada h1 p:first-child {
+  text-align: center;
+  font-size: .3em;
+}
+
+#Portada h1 p:nth-of-type(2) {
+  margin-top: -.7em;
+}
+
+#Portada {
+  background-color: #000;
+}
+
+#ImagenPortada {
+  opacity: .7;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  transition: background-image .5s linear;
+  position: absolute;
+  transform: scale(1.1);
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+body:not(#Portada) header {
+  background-position: center;
+  background-size: cover;
+}
+
+body:not(#Portada) h1 {
+  height: 60vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+
+body:not(#Portada) h1 p:first-child {
+  text-align: center;
+  margin-bottom: .5em;
+  font-size: .5em;
+}
+
+body:not(#Portada) h1 p:nth-of-type(2) {
+  margin-top: -.5em;
+  font-size: 2em;
+}
+
+#elpueblo header {
+  background-image: url("Mier2.a02e5dcc.png");
+}
+
+#elpueblo .buttons {
+  width: 1000px;
+  max-width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 90px;
+  display: flex;
+  position: absolute;
+}
+
+#elpueblo .container {
+  width: 80%;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  display: flex;
+}
+
+#elpueblo .imageAndText {
+  flex-direction: row;
+  gap: 20px;
+  display: none;
+}
+
+#elpueblo .image {
+  flex-basis: 50%;
+}
+
+#elpueblo .image img, #elpueblo .image iframe {
+  max-width: 100%;
+}
+
+#elpueblo .text {
+  flex-basis: 50%;
+}
+
+#elpueblo .prev, #elpueblo .next {
+  cursor: pointer;
+  color: #fff;
+  z-index: 1;
+  background-color: #0000004d;
+  padding: 16px;
+  font-size: 30px;
+  font-weight: bold;
+  transform: translateY(-50%);
+}
+
+#elpueblo .next {
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #elpueblo .imageAndText {
+    flex-direction: column;
+  }
+
+  #elpueblo .image, #elpueblo .text {
+    flex-basis: 100%;
+  }
+
+  #elpueblo .prev, #elpueblo .next {
+    padding: 6px;
+    font-size: 20px;
+  }
+
+  #elpueblo .buttons {
+    margin-top: 200px;
+  }
+}
+
+#turismo header {
+  background-image: url("RutaMier.96bac744.png");
+}
+
+.flex-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.flex-item {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px #0000004d;
+}
+
+.flex-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .flex-item {
+    width: 25%;
+  }
+}
+
+.flex-container a, .flex-container a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.diapoButtons {
+  width: 1000px;
+  max-width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 140px;
+  display: flex;
+  position: absolute;
+}
+
+.diapoSlide {
+  width: 80%;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  display: flex;
+}
+
+.diapoPrev, .diapoNext {
+  cursor: pointer;
+  color: #fff;
+  z-index: 1;
+  background-color: #0000004d;
+  padding: 16px;
+  font-size: 30px;
+  font-weight: bold;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0;
+}
+
+figure {
+  flex-direction: column;
+  margin-top: 3%;
+  margin-left: 2%;
+  display: none;
+}
+
+figure img, figure iframe {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-style: none;
+  margin: 0 auto;
+  display: block;
+}
+
+figure figcaption {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-size: 70%;
+}
+
+.relacionados {
+  margin-top: 5em;
+  font-weight: bold;
+}
+
+#turismo_rutaCares header {
+  background-image: url("Cares1.83a91bd3.png");
+}
+
+#turismo_gastronomia header {
+  background-image: url("Fab.813ca23c.png");
+}
+
+#turismo_molino header {
+  background-image: url("Molino2.d73b4228.png");
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
