@@ -33,7 +33,7 @@ nav li {
 nav a, h1 a {
   color: #fff; /* Color del texto del menú */
   display: block; /* Convertir el elemento de enlace en un elemento de bloque para que ocupe todo el ancho del elemento padre */
-  padding: 10px 20px; /* Añadir relleno alrededor del texto del enlace */
+  padding: 5px 10px; /* Añadir relleno alrededor del texto del enlace */
   text-decoration: none; /* Eliminar el subrayado del enlace */
 }
 
@@ -321,4 +321,54 @@ figure figcaption {
 #turismo_molino header
 {
   background-image: url("../static/Molino2.png");
+}
+/* ---------------------------------------------------------------Estilos sabermas */
+#sabermas header
+{
+  background-image: url("../static/Rio.png");
+}
+#sabermas main a,#sabermas main a:visited
+{
+  text-decoration: underline;
+  color: black;
+}
+
+#sabermas main li {
+	margin: 0;
+	padding: 30px 0 30px 60px;
+	list-style: none;
+	background-image: url('../img/arrowIcon.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+
+.containerEnlaces
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.containerEnlaces ul{
+  width: 30%;
+}
+
+.containerEnlaces img {
+  width: 40%;
+  object-fit:contain
+}
+
+@media screen and (max-width: 768px) {
+  .containerEnlaces {
+    flex-direction: column;
+
+  }
+  .containerEnlaces ul{
+    width: 100%;
+  }
+  
+  .containerEnlaces img {
+    width: 100%;
+  }
 }
