@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="elpueblo.html">El pueblo</a></li>
-                <li><a href="#">Turismo</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
             </ul>
         </nav>
 		<h1>
@@ -28,14 +28,19 @@
         </h1>
 	</header>
 	<main>
+        <script src="elpueblo.js"></script>
+        <div class = "buttons">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
         <div class="container">
             <div class="imageAndText">
                 <div class="text">
-                    <h2>Donde se encuentra Mier</h2>
+                    <h2>¿Dónde se encuentra Mier?</h2>
                     <p>En lo profundo de la región de Asturias, en el norte de España, se encuentra un lugar de cuento de hadas que te dejará enamorado. Mier, con su rica historia y su impresionante belleza natural, es un pueblo que te invita a soñar despierto.</p>
-                  </div>
+               </div>
                 <div class="image">
-                  <img src="../static/Mier.png" alt="Imagen del pueblo de mier">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23223.782002285294!2d-4.690966085603252!3d43.314829864581746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd49becdb4cd2e05%3A0x4e1e878e0f8790a2!2s33577%20Mier%2C%20Asturias!5e0!3m2!1ses!2ses!4v1680509623111!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="imageAndText">
@@ -43,15 +48,24 @@
                     <img src="../static/Mier4.png" alt="Imagen del rio de mier">
                   </div>
                 <div class="text">
-                    <h2>Historia de Mier</h2>
+                    <h2>La historia de Mier</h2>
                     <p>El pueblo de Mier se remonta al siglo XIII, cuando fue fundado por los monjes del monasterio de San Juan de Villapañada. Durante la Edad Media, Mier fue un importante centro de actividad agrícola y ganadera, y en el siglo XVIII se convirtió en un importante centro minero gracias a sus yacimientos de hierro.</p>
+              </div>
+            </div>
+            <div class="imageAndText">
+                <div class="text">
+                    <h2>¿Por qué venir a Mier?</h2>
+                    <p>Hoy en día, Mier es un lugar lleno de romanticismo y encanto, que te llevará en un viaje en el tiempo a través de sus estrechas calles empedradas, sus antiguas iglesias y sus impresionantes paisajes naturales. Descubre su arquitectura rural y disfruta de la tranquilidad de sus plazas, que te invitan a sentarte y simplemente disfrutar del momento.</p>
+                </div>
+                <div class="image">
+                    <img src="../static/Mier5.png" alt="Imagen aerea de Mier">
                 </div>
             </div>
+            <script>
+                plusSlides(1)
+            </script>
           </div>
-
-        <p>En lo profundo de la región de Asturias, en el norte de España, se encuentra un lugar de cuento de hadas que te dejará enamorado. Mier, con su rica historia y su impresionante belleza natural, es un pueblo que te invita a soñar despierto.</p>
-		<p>El pueblo de Mier se remonta al siglo XIII, cuando fue fundado por los monjes del monasterio de San Juan de Villapañada. Durante la Edad Media, Mier fue un importante centro de actividad agrícola y ganadera, y en el siglo XVIII se convirtió en un importante centro minero gracias a sus yacimientos de hierro.</p>
-		<p>Hoy en día, Mier es un lugar lleno de romanticismo y encanto, que te llevará en un viaje en el tiempo a través de sus estrechas calles empedradas, sus antiguas iglesias y sus impresionantes paisajes naturales. Descubre su arquitectura rural y disfruta de la tranquilidad de sus plazas, que te invitan a sentarte y simplemente disfrutar del momento.</p>
-    </main>
+   </main>
 </body>
+
 </html>
