@@ -37,6 +37,3 @@ function changeBackground() {
 
 // Llamar a la función de cambio de imagen cada 5 segundos
 setInterval(changeBackground, 5000);
-
-const name = 'world';
-console.log(`Hello ${name}`);
