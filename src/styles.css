@@ -146,7 +146,7 @@ body:not(#Portada) h1 p:nth-of-type(2){
 
 #elpueblo .image img{
   max-width: 100%;
-  height: 100%;
+  height: auto;
 }
 #elpueblo .image iframe{
   width: 100%;
