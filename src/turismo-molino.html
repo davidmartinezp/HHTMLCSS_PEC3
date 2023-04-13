@@ -8,8 +8,10 @@
     <link rel="stylesheet" type="text/css" href="styles.css">  
     <title>Mier, la ruta del Cares</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body id = "turismo_molino">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<header>
         <nav>
             <ul>
@@ -30,26 +32,37 @@
 	</header>
 	<main>
         <p>Adéntrate en un viaje en el tiempo y descubre la riqueza cultural e histórica de Asturias en el último molino hidráulico de la zona que aún muele maíz. Ubicado en el idílico pueblo de Mier, este molino es una joya de la arquitectura asturiana y un testimonio vivo de la importancia que ha tenido la molienda de cereales en la región durante siglos.</p>
-        <script src="turimo-files.js"></script>
-        <div class = "diapoButtons">
-            <a class="diapoPrev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="diapoNext" onclick="plusSlides(1)">&#10095;</a>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <figure class = "diapo">
+                        <img
+                          src="../static/Molinu.png"
+                          alt="Garganta del Cares">  
+                        <figcaption>
+                            La acequia alimentando el molino desde el río de las Volugas
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure class = "diapo">
+                        <img
+                          src="../static/Molino2.png"
+                          alt="Garganta del Cares">  
+                        <figcaption>
+                            Descubre la historia y la magia de la molienda de cereales en Asturias
+                    </figure>
+                </div>
+            </div>
+    
+            <!-- <div class="swiper-pagination"></div> -->
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
-        <div class = "diapoSlide">
-            <figure class = "diapo">
-                <img
-                  src="../static/Molinu.png"
-                  alt="Garganta del Cares">  
-                <figcaption>
-                    La acequia alimentando el molino desde el río de las Volugas
-               </figure>
-            <figure class = "diapo">
-                <img
-                  src="../static/Molino2.png"
-                  alt="Garganta del Cares">  
-                <figcaption>
-                    Descubre la historia y la magia de la molienda de cereales en Asturias</figure>
-        </div>
+        <script src="sliders.js"></script> 
         <h2>¿Qué encontrarás en el Molino de Mier?</h2>
         <ul>
           <li>El sonido del agua corriendo por la acequia te transportará a un mundo en el que el trabajo manual y la tradición eran la norma.</li>
@@ -76,9 +89,6 @@
             </div>
           </div>
     </main>
-   <script>
-    plusSlides(1)
-</script>
 </body>
 
 </html>

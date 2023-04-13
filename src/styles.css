@@ -116,7 +116,7 @@ body:not(#Portada) h1
 }
 
 body:not(#Portada) h1 p:first-child{
-  font-size: 0.5em;
+  font-size: 0.6em;
   text-align: center;
   margin-bottom: 0.5em;
 }
@@ -125,85 +125,34 @@ body:not(#Portada) h1 p:nth-of-type(2){
   font-size:2em;
 }
 
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (max-width: 500px) {
+  body:not(#Portada) h1 p:nth-of-type(2){
+    font-size: 13vw;
+  }
+  body:not(#Portada) h1 p:first-child{
+    font-size: 4vw;
+  }
+}
+
 /* ---------------------------------------------------------------Estilos el pueblo */
 #elpueblo header
 {
   background-image: url("../static/Mier2.png");
-
-}
-
-#elpueblo .buttons
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: absolute;
-  width: 1000px;
-  max-width: 80%;
-  margin-top: 90px;
-}
-#elpueblo .container
-{
-  display: flex;
-  flex-direction: column; /* horizontal por defecto */
-  gap: 30px;
-  width: 80%;
-  margin: auto;
 }
 #elpueblo .imageAndText {
-  display: none;
-  /* display: flex; */
-  flex-direction: row; /* horizontal por defecto */
   gap: 20px;
 }
 
-#elpueblo .image {
-  flex-basis: 50%; /* ocupa el 50% del ancho del contenedor */
-}
 #elpueblo .image img{
   max-width: 100%;
+  height: 100%;
 }
 #elpueblo .image iframe{
-  max-width: 100%;
+  width: 100%;
+  height: 50vw;
+  max-height: 600px;
 }
-
-#elpueblo .text {
-  flex-basis: 50%; /* ocupa el 50% del ancho del contenedor */
-}
-
-#elpueblo .prev,
-#elpueblo .next {
-  transform: translateY(-50%);
-  cursor: pointer;
-  padding: 16px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-#elpueblo .next {
-  right: 0;
-}
-
-@media screen and (max-width: 768px) {
-  #elpueblo .imageAndText {
-    flex-direction: column; /* cambia a vertical */
-  }
-  
-  #elpueblo .image, #elpueblo .text {
-    flex-basis: 100%; /* ocupa todo el ancho del contenedor */
-  }
-  #elpueblo .prev, #elpueblo .next {
-    padding: 6px;
-    font-size: 20px;
-  }
-  #elpueblo .buttons
-  {
-    margin-top: 200px;
-  } 
-}
-
 
 
 /* ---------------------------------------------------------------Estilos tursimo */
@@ -244,7 +193,7 @@ body:not(#Portada) h1 p:nth-of-type(2){
 
 /* ---------------------------------------------------------------Estilos comunes fichas turismpo */
 
- .diapoButtons
+ /* .diapoButtons
 {
   display: flex;
   flex-direction: row;
@@ -257,7 +206,7 @@ body:not(#Portada) h1 p:nth-of-type(2){
 .diapoSlide
 {
   display: flex;
-  flex-direction: column; /* horizontal por defecto */
+  flex-direction: column; 
   gap: 30px;
   width: 80%;
   margin: auto;
@@ -275,15 +224,14 @@ body:not(#Portada) h1 p:nth-of-type(2){
 }
 .next {
   right: 0;
-}
+} */
 
-figure {
+/* figure {
   display: none;
   margin-top: 3%;
   margin-left: 2%;
   flex-direction: column;
-  /* margin: 0 auto; */
-}
+} */
 
 figure img, figure iframe {
   margin: 0 auto;

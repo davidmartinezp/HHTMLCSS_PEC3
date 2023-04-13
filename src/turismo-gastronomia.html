@@ -8,8 +8,10 @@
     <link rel="stylesheet" type="text/css" href="styles.css">  
     <title>Mier, la ruta del Cares</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body id = "turismo_gastronomia">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<header>
         <nav>
             <ul>
@@ -30,27 +32,38 @@
 	</header>
 	<main>
         <p>La cocina de Mier se basa en productos locales de alta calidad y una gran variedad de platos tradicionales que han pasado de generación en generación. La comida en Mier es una expresión de amor y respeto por las raíces asturianas y su cultura, y una experiencia que no te puedes perder si visitas esta región.</p>
-        <script src="turimo-files.js"></script>
-        <div class = "diapoButtons">
-            <a class="diapoPrev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="diapoNext" onclick="plusSlides(1)">&#10095;</a>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <figure class = "diapo">
+                        <img
+                        src="../static/Quesos.png"
+                        alt="Garganta del Cares">  
+                        <figcaption>
+                            Los quesos asturianos son una delicia artesanal, llenos de sabor y aroma gracias a la leche local, que reflejan la pasión y el orgullo por la gastronomía asturiana.</figcaption>
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure class = "diapo">
+                        <img
+                        src="../static/Fab.png"
+                        alt="Garganta del Cares">  
+                        <figcaption>
+                            Las fabes asturianas son un tesoro culinario de la región, de gran tamaño y suaves al paladar, que transportan a las montañas asturianas con su aroma y sabor únicos.</figcaption>
+                    </figure>
+                </div>
+            </div>
+    
+            <!-- <div class="swiper-pagination"></div> -->
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
-        <div class = "diapoSlide">
-            <figure class = "diapo">
-                <img
-                  src="../static/Fab.png"
-                  alt="Garganta del Cares">  
-                <figcaption>
-                    Las fabes asturianas son un tesoro culinario de la región, de gran tamaño y suaves al paladar, que transportan a las montañas asturianas con su aroma y sabor únicos.</figcaption>
-            </figure>
-            <figure class = "diapo">
-                <img
-                  src="../static/Quesos.png"
-                  alt="Garganta del Cares">  
-                <figcaption>
-                    Los quesos asturianos son una delicia artesanal, llenos de sabor y aroma gracias a la leche local, que reflejan la pasión y el orgullo por la gastronomía asturiana.</figcaption>
-            </figure>
-        </div>
+        <script src="sliders.js"></script> 
+
         <ul>
             <li>Fabes: alubias blancas de gran tamaño que se cuecen con chorizo, morcilla y panceta para obtener un guiso contundente y sabroso.</li>
             <li>Patatas a la importancia: un guiso de patatas con azafrán, pimentón y huevo cocido.</li>
@@ -78,9 +91,6 @@
             </div>
           </div>
     </main>
-   <script>
-    plusSlides(1)
-</script>
 </body>
 
 </html>
