@@ -154,6 +154,10 @@ body:not(#Portada) h1 p:nth-of-type(2){
   max-height: 600px;
 }
 
+.swiper-button-prev, .swiper-button-next
+{
+  opacity: 0.5;
+}
 
 /* ---------------------------------------------------------------Estilos tursimo */
 #turismo header
