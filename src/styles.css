@@ -13,24 +13,24 @@ main
   line-height: 1.5em;
   margin-top: 3em;
 }
-nav {
+header nav {
   text-align: center; /* Centrar horizontalmente los elementos del menú */
 }
 
-nav ul {
+header nav ul {
   list-style: none; /* Eliminar los estilos por defecto de la lista */
   margin: 0; /* Eliminar el margen por defecto de la lista */
   padding: 0; /* Eliminar el relleno por defecto de la lista */
   
 }
 
-nav li {
+header nav li {
   font-weight: bold;
   font-size: 1.1em;
   display: inline-block; /* Mostrar los elementos uno al lado del otro */
 }
 
-nav a, h1 a {
+header nav a, h1 a {
   color: #fff; /* Color del texto del menú */
   display: block; /* Convertir el elemento de enlace en un elemento de bloque para que ocupe todo el ancho del elemento padre */
   padding: 5px 10px; /* Añadir relleno alrededor del texto del enlace */
@@ -44,6 +44,17 @@ nav a:hover
 {
   color: lightblue;
 }
+
+.logo-container-header
+{
+  text-align: center;
+}
+
+.logo-container-header img {
+  width: 50vh;
+  height: 50vh;
+}
+
 
 /* ---------------------------------------------------------------Estilos portada */
 /* Estilos para el título principal */
@@ -323,4 +334,36 @@ figure figcaption {
   .containerEnlaces img {
     width: 100%;
   }
+}
+/* ---------------------------------------------------------------footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  
+}
+
+.footer-nav li {
+  margin: 0 10px;
+}
+
+.footer-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo-container-footer img {
+  width: 60px;
 }
