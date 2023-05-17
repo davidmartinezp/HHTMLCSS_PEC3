@@ -4,11 +4,10 @@ const imagenDePortada = document.getElementById('ImagenPortada');
 
 // Definir una lista de imágenes de fondo
 const backgrounds = [
-  'Mier.png',
-  'Mier2.png',
-  'Mier3.png',
+  'Mier_webp.webp',
+  'Mier2_webp.webp',
+  'Mier3_webp.webp',
 ];
-
 // Definir un índice de imagen actual
 let currentBackground = 0;
 

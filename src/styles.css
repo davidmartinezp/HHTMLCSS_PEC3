@@ -47,12 +47,17 @@ nav a:hover
 
 .logo-container-header
 {
+  position: absolute;
   text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  Z-index: -1;
 }
 
 .logo-container-header img {
-  width: 50vh;
-  height: 50vh;
+  width: 30vw;
+  max-width: 400px;
 }
 
 
@@ -93,9 +98,8 @@ nav a:hover
   transition: background-image 0.5s linear;
 }
 
-/* Estilos para la imagen de fondo */
+
 #ImagenPortadaContainer {
-  
   opacity: 0.7;
   background-color: Black;
   top: 0;
@@ -105,12 +109,22 @@ nav a:hover
   position: absolute;
   Z-index: -1;
   overflow: hidden;
-  clip-path: polygon(0% 70%, 25% 30%, 50% 60%, 75% 40%, 100% 70%, 100% 100%, 0% 100%);
-  /* clip-path: polygon(0% 50%, 25% 15%, 50% 50%, 75% 5%, 100% 50%, 100% 100%, 0% 100%); */
-  clip-path: polygon(0% 10%, 12% 20%, 24% 5%, 36% 10%, 48% 15%, 60% 5%, 72% 15%, 84% 10%, 96% 15%, 100% 5%, 100% 100%, 0% 100%);
-
-  
 }
+
+#ImagenPortadaContainer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw; 
+  height: 100vh;
+  background-color: #000;
+  z-index: 1;
+  opacity: 0.8;
+  clip-path: circle(17% at 50% 33%);
+}
+
 
 @keyframes zoom-in {
   0% {
