@@ -201,6 +201,30 @@ body:not(#Portada) h1 p:nth-of-type(2){
   opacity: 0.5;
 }
 
+@keyframes move {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(100vw, 100vh); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Estilos CSS para el contenedor y la imagen */
+.containerAnimatedSVG {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  top:0;
+}
+
+.svg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  animation: move 3s linear infinite;
+}
+
 /* ---------------------------------------------------------------Estilos tursimo */
 #turismo header
 {
@@ -239,45 +263,6 @@ body:not(#Portada) h1 p:nth-of-type(2){
 
 /* ---------------------------------------------------------------Estilos comunes fichas turismpo */
 
- /* .diapoButtons
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: absolute;
-  width: 1000px;
-  max-width: 80%;
-  margin-top:140px;
-}
-.diapoSlide
-{
-  display: flex;
-  flex-direction: column; 
-  gap: 30px;
-  width: 80%;
-  margin: auto;
-}
-.diapoPrev,
-.diapoNext {
-  transform: translateY(-50%);
-  cursor: pointer;
-  padding: 16px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-.next {
-  right: 0;
-} */
-
-/* figure {
-  display: none;
-  margin-top: 3%;
-  margin-left: 2%;
-  flex-direction: column;
-} */
 
 figure img, figure iframe {
   margin: 0 auto;
@@ -394,6 +379,7 @@ footer {
 .footer-nav li a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 0.7em;
 }
 
 .logo-container-footer img {
