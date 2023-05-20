@@ -222,10 +222,10 @@ body:not(#Portada) .backgroundImageHeader img
 }
 
 /* ---------------------------------------------------------------Estilos el pueblo */
-#elpueblo header
+/* #elpueblo header
 {
   background-image: url("../static/Mier2.png");
-}
+} */
 #elpueblo .imageAndText {
   gap: 20px;
 }
@@ -371,10 +371,10 @@ figure figcaption {
   background-image: url("../static/Molino2.png");
 } */
 /* ---------------------------------------------------------------Estilos sabermas */
-#sabermas header
+/* #sabermas header
 {
   background-image: url("../static/Rio.png");
-}
+} */
 #sabermas main a,#sabermas main a:visited
 {
   text-decoration: underline;
