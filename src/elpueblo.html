@@ -30,9 +30,40 @@
             </p>
         </h1>
         <div class="containerAnimatedSVG">
-            <svg class="svg-image" viewBox="0 0 100 100">
-              <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-            </svg>
+            <svg id="svgcow" width="200" height="200">
+                    <!-- Cuerpo -->
+    <circle cx="100" cy="100" r="70" fill="white" stroke="black" />
+
+    <!-- Manchas -->
+    <circle cx="60" cy="60" r="10" fill="black" />
+    <circle cx="140" cy="60" r="10" fill="black" />
+    <circle cx="60" cy="140" r="10" fill="black" />
+    <circle cx="140" cy="140" r="10" fill="black" />
+
+    <!-- Cabeza -->
+    <circle cx="100" cy="60" r="40" fill="white" stroke="black" />
+
+    <!-- Ojos -->
+    <circle cx="80" cy="50" r="5" fill="black" />
+    <circle cx="120" cy="50" r="5" fill="black" />
+
+    <!-- Orejas -->
+    <path d="M60,40 Q80,20 100,40" fill="white" stroke="black" />
+    <path d="M140,40 Q120,20 100,40" fill="white" stroke="black" />
+
+    <!-- Nariz -->
+    <circle cx="100" cy="70" r="10" fill="black" />
+
+    <!-- Boca -->
+    <path d="M80,80 Q100,90 120,80" fill="none" stroke="black" />
+
+    <!-- Patas -->
+    <line x1="80" y1="160" x2="80" y2="190" stroke="black" />
+    <line x1="120" y1="160" x2="120" y2="190" stroke="black" />
+
+    <!-- Cola -->
+    <path d="M160,100 Q180,90 180,80" fill="none" stroke="black" />
+              </svg>
         </div>
 	</header>
 	<main>
@@ -83,6 +114,19 @@
     </div>
     <script src="sliders.js"></script> 
    </main>
+   <footer>
+    <nav>
+        <ul class="footer-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="elpueblo.html">El pueblo</a></li>
+            <li><a href="turismo.html">Turismo</a></li>
+            <li><a href="enlaces.html">Saber más</a></li>
+        </ul>
+    </nav>
+    <div class="logo-container-footer">
+        <img src="../static/logoweb.svg" alt="Logo web">
+    </div>  
+</footer> 
 </body>
 
 </html>

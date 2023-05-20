@@ -167,7 +167,6 @@ body:not(#Portada) h1 p:nth-of-type(2){
   font-size:2em;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (max-width: 500px) {
   body:not(#Portada) h1 p:nth-of-type(2){
     font-size: 13vw;
@@ -201,29 +200,54 @@ body:not(#Portada) h1 p:nth-of-type(2){
   opacity: 0.5;
 }
 
-@keyframes move {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(100vw, 100vh); }
-  100% { transform: translate(0, 0); }
+@keyframes jumpCowSmall {
+  0% { 
+    transform: translateY(0) translate(-50%, -50%) scale(0.5);
+  }
+  50% { 
+    transform: translateY(-60px) translate(-50%, -50%) scale(0.5); 
+  }
+  100% { 
+    transform: translateY(0) translate(-50%, -50%) scale(0.5); 
+  }
 }
 
-/* Estilos CSS para el contenedor y la imagen */
+@keyframes jumpCowBig {
+  0% { 
+    transform: translateY(0) translate(-50%, -50%) scale(0.7);
+  }
+  50% { 
+    transform: translateY(-80px) translate(-50%, -50%) scale(0.7); 
+  }
+  100% { 
+    transform: translateY(0) translate(-50%, -50%) scale(0.7); 
+  }
+}
+
+
 .containerAnimatedSVG {
+  align-items: center; 
+  height: 60vh;
   width: 100vw;
-  height: 100vh;
-  position: absolute;
-  overflow: hidden;
-  top:0;
-}
-
-.svg-image {
+  margin: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  animation: move 3s linear infinite;
+  pointer-events: none;
 }
+
+#svgcow {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  animation: jumpCowBig 1s infinite;
+}
+
+@media screen and (max-width: 900px) {
+  #svgcow {
+    animation: jumpCowSmall 1s infinite;
+  }
+}
+
 
 /* ---------------------------------------------------------------Estilos tursimo */
 #turismo header
