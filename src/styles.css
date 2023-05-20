@@ -34,6 +34,13 @@ header nav li {
   display: inline-block; /* Mostrar los elementos uno al lado del otro */
 }
 
+@media screen and (max-width: 500px) {
+  header nav li{
+    font-size: 4vw;
+  }
+}
+
+
 header nav a, h1 a {
   color: #fff; /* Color del texto del menú */
   display: block; /* Convertir el elemento de enlace en un elemento de bloque para que ocupe todo el ancho del elemento padre */
@@ -247,13 +254,13 @@ body:not(#Portada) .backgroundImageHeader img
 
 @keyframes jumpCowSmall {
   0% { 
-    transform: translateY(0) translate(-50%, -50%) scale(0.5);
+    transform: translateY(0) translate(-50%, -50%) scale(0.3);
   }
   50% { 
-    transform: translateY(-60px) translate(-50%, -50%) scale(0.5); 
+    transform: translateY(-10px) translate(-50%, -50%) scale(0.3); 
   }
   100% { 
-    transform: translateY(0) translate(-50%, -50%) scale(0.5); 
+    transform: translateY(0) translate(-50%, -50%) scale(0.3); 
   }
 }
 
@@ -282,12 +289,12 @@ body:not(#Portada) .backgroundImageHeader img
 
 #svgcow {
   position: absolute;
-  top: 33%;
+  top: 20vw;
   left: 50%;
   animation: jumpCowBig 1s infinite;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   #svgcow {
     animation: jumpCowSmall 1s infinite;
   }
@@ -402,8 +409,12 @@ figure figcaption {
   width: 30%;
 }
 
-.containerEnlaces img {
+.containerEnlaces picture {
   width: 40%;
+}
+
+.containerEnlaces picture img {
+  width: 100%;
   object-fit:contain
 }
 
@@ -416,7 +427,7 @@ figure figcaption {
     width: 100%;
   }
   
-  .containerEnlaces img {
+  .containerEnlaces picture {
     width: 100%;
   }
 }
