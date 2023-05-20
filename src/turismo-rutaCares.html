@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/logoweb.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">  
     <title>Mier, la ruta del Cares</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
 </head>
 <body id = "turismo_rutaCares">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.js"></script>
 	<header>
 
         <picture class = "backgroundImageHeader">
@@ -48,18 +49,26 @@
             <!-- Slides -->
                 <div class="swiper-slide">
                     <figure class = "diapo">
-                        <img
+                        <picture>
+                            <source source srcset="../static/Cares3.png?as=webp&width=1000" type="image/webp" />
+                            <img src="../static/Cares3.png?width=1000" alt="Ruta del Cares" />
+                        </picture>
+                        <!-- <img
                         src="../static/Cares3.png"
-                        alt="Garganta del Cares">  
+                        alt="Garganta del Cares">   -->
                         <figcaption>
                             La naturaleza salvaje de los Picos de Europa te espera en la ruta del Cares.</figcaption>
                     </figure>
                 </div>
                 <div class="swiper-slide">
                     <figure class = "diapo">
-                        <img
+                        <picture>
+                            <source source srcset="../static/Cares2.png?as=webp&width=1000" type="image/webp" />
+                            <img src="../static/Cares2.png?width=1000" alt="Garganta del Cares" />
+                        </picture>
+                        <!-- <img
                           src="../static/Cares2.png"
-                          alt="Garganta del Cares">  
+                          alt="Garganta del Cares">   -->
                         <figcaption>
                           El rugido del río Cares te guía a través de un paisaje majestuoso en la ruta del Cares.
                         </figcaption>
@@ -67,9 +76,13 @@
                 </div>
                 <div class="swiper-slide">
                     <figure class = "diapo">
-                        <img
+                        <picture>
+                            <source source srcset="../static/Cares1.png?as=webp&width=1000" type="image/webp" />
+                            <img src="../static/Cares1.png?width=1000" alt="Garganta del Cares" />
+                        </picture>
+                        <!-- <img
                           src="../static/Cares1.png"
-                          alt="Garganta del Cares">  
+                          alt="Garganta del Cares">   -->
                         <figcaption>
                             La ruta del Cares te ofrece la aventura de caminar entre montañas y valles.
                         </figcaption>

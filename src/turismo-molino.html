@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/logoweb.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">  
     <title>Mier, la ruta del Cares</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
 </head>
 <body id = "turismo_molino">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.js"></script>
 	<header>
 
         <picture class = "backgroundImageHeader">
@@ -48,18 +49,21 @@
             <!-- Slides -->
                 <div class="swiper-slide">
                     <figure class = "diapo">
-                        <img
-                          src="../static/Molinu.png"
-                          alt="Garganta del Cares">  
+                        <picture>
+                            <source source srcset="../static/Molinu.png?as=webp&width=1000" type="image/webp" />
+                            <img src="../static/Molinu.png?width=1000" alt="El molino de mier" />
+                        </picture>
                         <figcaption>
                             La acequia alimentando el molino desde el río de las Volugas
                     </figure>
                 </div>
                 <div class="swiper-slide">
                     <figure class = "diapo">
-                        <img
-                          src="../static/Molino2.png"
-                          alt="Garganta del Cares">  
+                        <picture>
+                            <source media="(max-width: 799px)" source srcset="../static/Molino2_crop.png?as=webp" type="image/webp" />
+                            <source media="(min-width: 800px)" source srcset="../static/Molino2.png?as=webp" type="image/webp" />
+                            <img src="../static/Molino2.png?width=1000" alt="El molino de mier" />
+                        </picture>
                         <figcaption>
                             Descubre la historia y la magia de la molienda de cereales en Asturias
                     </figure>
