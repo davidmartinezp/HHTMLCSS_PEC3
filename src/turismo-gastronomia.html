@@ -13,14 +13,13 @@
 <body id = "turismo_gastronomia">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<header>
-        <div>
-            <picture>
-                <source srcset="../static/Molino2.png?as=avif&width=800" type="image/avif" />
-                <source srcset="../static/Molino2.png?as=webp&width=800" type="image/webp" />
-                <source srcset="../static/Molino2.png?width=800" type="image/jpeg" />
-                <img src="../static/Molino2.png?width=200" alt="test image" />
-            </picture>
-        </div>
+
+        <picture class = "backgroundImageHeader">
+            <source srcset="../static/Fab800.png?as=webp 800w,
+            ../static/Fab1920.png?as=webp 1920w" sizes="(max-width: 800px) 800px,
+           1920px" type="image/webp" />
+            <img src="../static/Fab.png?width=1000" alt="Fabes asturianas" />
+        </picture>
 
         <nav>
             <ul>
@@ -57,12 +56,16 @@
                     </figure>
                 </div>
                 <div class="swiper-slide">
-                    <figure class = "diapo">
-                        <img
-                        src="../static/Fab.png"
-                        alt="Garganta del Cares">  
+                    <figure class="diapo">
+                        <picture>
+                          <source srcset="../static/Fab.png?as=webp&width=1000" type="image/webp" />
+                          <source srcset="../static/Fab.png?as=avif&width=1000" type="image/avif" />
+                          <source srcset="../static/Fab.png?width=1000" type="image/jpeg" />
+                          <img src="../static/Fab.png?width=1000" alt="Fabes asturianas" />
+                        </picture>
                         <figcaption>
-                            Las fabes asturianas son un tesoro culinario de la región, de gran tamaño y suaves al paladar, que transportan a las montañas asturianas con su aroma y sabor únicos.</figcaption>
+                          Las fabes asturianas son un tesoro culinario de la región, de gran tamaño y suaves al paladar, que transportan a las montañas asturianas con su aroma y sabor únicos.
+                        </figcaption>
                     </figure>
                 </div>
             </div>
