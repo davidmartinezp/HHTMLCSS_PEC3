@@ -19,5 +19,10 @@
     "parcel-reporter-static-files-copy": "^1.5.0",
     "rimraf": "^4.4.1"
   },
-  "browserslist": "> 2%, last 2 versions, not dead"
+  "browserslist": "> 2%, last 2 versions, not dead",
+  "dependencies": {
+    "@parcel/transformer-image": "^2.8.3",
+    "perm": "^1.0.0",
+    "sharp": "^0.32.1"
+  }
 }
