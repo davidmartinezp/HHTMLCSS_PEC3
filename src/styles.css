@@ -256,43 +256,46 @@ body:not(#Portada) .backgroundImageHeader img
 
 @keyframes jumpCowSmall {
   0% { 
-    transform: translateY(0) translate(-50%, -50%) scale(0.3);
+    transform: translateY(0) scale(0.3);
   }
   50% { 
-    transform: translateY(-20px) translate(-50%, -50%) scale(0.4); 
+    transform: translateY(-20px) scale(0.3); 
   }
   100% { 
-    transform: translateY(0) translate(-50%, -50%) scale(0.3); 
+    transform: translateY(0) scale(0.3); 
   }
 }
 
 @keyframes jumpCowBig {
   0% { 
-    transform: translateY(0) translate(-50%, -50%) scale(0.7);
+    transform: translateY(0) scale(0.4);
   }
   50% { 
-    transform: translateY(-80px) translate(-50%, -50%) scale(0.9); 
+    transform: translateY(-80px) scale(0.4); 
   }
   100% { 
-    transform: translateY(0) translate(-50%, -50%) scale(0.7); 
+    transform: translateY(0)  scale(0.4); 
   }
 }
 
 
 .containerAnimatedSVG {
-  align-items: center; 
-  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vw;
+  max-height: 50vh;
   width: 100vw;
-  margin: 0;
+  pointer-events: none;
   position: absolute;
   top: 0;
-  pointer-events: none;
 }
 
 #svgcow {
-  position: absolute;
-  top: 20vw;
+  top: 5vw;
   left: 50%;
+  height: 200px;
+  width: 200px;
   animation: jumpCowBig 1s infinite;
 }
 
