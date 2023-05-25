@@ -76,6 +76,12 @@ nav a:hover
   max-width: 400px;
 }
 
+@media screen and (max-width: 500px) {
+  #Portada .logo-container-header img {
+    width: 60vw;
+  }
+}
+
 #Portada h1 {
   
   position: absolute;
@@ -137,6 +143,12 @@ nav a:hover
   z-index: 1;
   opacity: 0.8;
   clip-path: circle(17% at 50% 33%);
+}
+
+@media screen and (max-width: 750px) {
+  #ImagenPortadaContainer::before {
+    clip-path: circle(25% at 50% 33%);
+  }
 }
 
 
