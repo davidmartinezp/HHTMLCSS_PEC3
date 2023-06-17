@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../static/logoweb.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Work+Sans:wght@700&display=swap" >
     <link rel="stylesheet" type="text/css" href="styles.css">  
     <title>Mier, turismo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body id = "turismo">
 	<header>
+
         <picture class = "backgroundImageHeader">
-            <source media="(min-resolution: 300dpi)" srcset="../static/RutaMier300.png?as=webp">
-            <source media="(min-resolution: 120dpi)" srcset="../static/RutaMier120.png?as=webp">
-            <source srcset="../static/RutaMier72.png?as=webp">
-            <img src="../static/RutaMier.png" alt="Carretera de Mier" loading="lazy">
+            <source srcset="../static/RutaMier300.png?as=webp&width=1200" media="(min-width: 1200px)" type="image/webp">
+            <source srcset="../static/RutaMier300.png?as=webp&width=768" media="(min-width: 768px)" type="image/webp">
+            <img src="../static/RutaMier300.png?as=webp&width=500" alt="Carretera de Mier" loading="lazy">
         </picture>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>

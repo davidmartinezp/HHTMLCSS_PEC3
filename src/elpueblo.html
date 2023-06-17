@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../static/logoweb.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Work+Sans:wght@700&display=swap" >
     <link rel="stylesheet" type="text/css" href="styles.css">  
     <title>Mier, el pueblo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +16,9 @@
     <script src="swiper.js" async></script>
 	<header>
         <picture class = "backgroundImageHeader">
-            <source media="(min-resolution: 300dpi)" srcset="../static/Mier300.png?as=webp">
-            <source media="(min-resolution: 120dpi)" srcset="../static/Mier120.png?as=webp">
-            <source srcset="../static/Mier72.png?as=webp">
-            <img src="../static/Mier2.png" alt="Carretera de Mier" loading="lazy">
+            <source srcset="../static/Mier300.png?as=webp&width=1200" media="(min-width: 1200px)" type="image/webp">
+            <source srcset="../static/Mier300.png?as=webp&width=768" media="(min-width: 768px)" type="image/webp">
+            <img src="../static/Mier300.png?as=webp&width=500" alt="Carretera de Mier" loading="lazy">
         </picture>
 
         <nav>
