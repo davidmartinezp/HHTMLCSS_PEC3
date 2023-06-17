@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
 </head>
 <body id = "elpueblo">
-    <script src="../node_modules/swiper/swiper-bundle.js"></script>
-    <script src="swiper.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.js" async></script>
+    <script src="swiper.js" async></script>
 	<header>
         <picture class = "backgroundImageHeader">
             <source media="(min-resolution: 300dpi)" srcset="../static/Mier300.png?as=webp">
             <source media="(min-resolution: 120dpi)" srcset="../static/Mier120.png?as=webp">
             <source srcset="../static/Mier72.png?as=webp">
-            <img src="../static/Mier2.png" alt="Carretera de Mier">
+            <img src="../static/Mier2.png" alt="Carretera de Mier" loading="lazy">
         </picture>
 
         <nav>
@@ -31,7 +31,7 @@
             </ul>
         </nav>
         <div class="logo-container-header">
-            <img src="../static/logoweb.svg" alt="Logo web">
+            <img src="../static/logoweb.svg" alt="Logo web" loading="lazy">
         </div>
         <h1>El pueblo de  <span class = "secondH1" style = "display: block;">MIER</span></h1>
 
@@ -63,7 +63,7 @@
                     <picture>
                         <source srcset="../static/Mier4.png?as=webp&width=1200" media="(min-width: 1200px)" type="image/webp">
                         <source srcset="../static/Mier4.png?as=webp&width=768" media="(min-width: 768px)" type="image/webp">
-                        <img src="../static/Mier4.png?as=webp&width=500" alt="El puente de Mier" >
+                        <img src="../static/Mier4.png?as=webp&width=500" alt="El puente de Mier" loading="lazy">
                     </picture>
                   </div>
                 <div class="text">
@@ -82,7 +82,7 @@
                     <picture>
                         <source srcset="../static/Mier5.png?as=webp&width=1200" media="(min-width: 1200px)" type="image/webp">
                         <source srcset="../static/Mier5.png?as=webp&width=768" media="(min-width: 768px)" type="image/webp">
-                        <img src="../static/Mier5.png?as=webp&width=500" alt="Imagen aerea de Mier" >
+                        <img src="../static/Mier5.png?as=webp&width=500" alt="Imagen aerea de Mier" loading="lazy">
                     </picture>
                 </div>
             </div>
@@ -96,7 +96,7 @@
     
         <div class="swiper-scrollbar"></div>
     </div>
-    <script src="sliders.js"></script> 
+    <script src="sliders.js" async></script> 
    </main>
    <footer>
     <nav>
@@ -108,7 +108,7 @@
         </ul>
     </nav>
     <div class="logo-container-footer">
-        <img src="../static/logoweb.svg" alt="Logo web">
+        <img src="../static/logoweb.svg" alt="Logo web" loading="lazy">
     </div>  
 </footer> 
 </body>
