@@ -25,10 +25,23 @@
     <script src="../node_modules/swiper/swiper-bundle.js" async></script>
 	<header>
 
-        <picture class = "backgroundImageHeader">
+        <!-- <picture class = "backgroundImageHeader">
             <source srcset="../static/Cares800.png?as=webp 800w, ../static/Cares1920.png?as=webp 1920w" sizes="(max-width: 800px) 800px, 1920px" type="image/webp">
             <img src="../static/Cares1.png?width=1000" alt="Fabes asturianas" loading="lazy">
-        </picture>
+        </picture> -->
+
+        <!-- <picture class="backgroundImageHeader">
+            <source srcset="../static/Cares800.png?as=webp 800w, ../static/Cares1920.png?as=webp 1920w" sizes="(max-width: 800px) 800px, 1920px" type="image/webp">
+            <img src="../static/Cares1.png" alt="Fabes asturianas" loading="lazy">
+          </picture> -->
+
+          <picture class="backgroundImageHeader">
+            <source media="(max-width: 800px)" srcset="../static/Cares800.png?as=webp" type="image/webp">
+            <source media="(max-width: 800px)" srcset="../static/Cares800.png" type="image/png">
+            <source srcset="../static/Cares1920.png?as=webp" type="image/webp">
+            <source srcset="../static/Cares1920.png" type="image/png">
+            <img src="../static/Cares1.png" alt="Ruta del cares" loading="lazy">
+          </picture>
 
         <nav>
             <ul>
@@ -54,8 +67,8 @@
                 <div class="swiper-slide">
                     <figure class = "diapo">
                         <picture>
-                            <source srcset="../static/Cares3.png?as=webp&width=1200" media="(min-width: 1200px)" type="image/webp">
-                            <source srcset="../static/Cares3.png?as=webp&width=768" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="../static/Cares3.png?as=webp&width=1000" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="../static/Cares3.png?as=webp&width=600" media="(min-width: 768px)" type="image/webp">
                             <img src="../static/Cares3.png?as=webp&width=500" alt="Ruta del Cares" loading="lazy">
                         </picture>
                         <figcaption>
@@ -65,8 +78,8 @@
                 <div class="swiper-slide">
                     <figure class = "diapo">
                         <picture>
-                            <source srcset="../static/Cares2.png?as=webp&width=1200" media="(min-width: 1200px)" type="image/webp">
-                            <source srcset="../static/Cares2.png?as=webp&width=768" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="../static/Cares2.png?as=webp&width=1000" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="../static/Cares2.png?as=webp&width=600" media="(min-width: 768px)" type="image/webp">
                             <img src="../static/Cares2.png?as=webp&width=500" alt="Garganta del Cares" loading="lazy">
                         </picture>
                         <figcaption>

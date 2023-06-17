@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap">
     </noscript>
     <link rel="stylesheet" type="text/css" href="styles.css">  
-    <title>Mier, la ruta del Cares</title>
+    <title>Mier, gastronomía</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
 </head>
@@ -25,11 +25,18 @@
     <script src="../node_modules/swiper/swiper-bundle.js" async></script>
 	<header>
 
-        <picture class = "backgroundImageHeader">
+        <!-- <picture class = "backgroundImageHeader">
             <source srcset="../static/Fab800.png?as=webp 800w,../static/Fab1920.png?as=webp 1920w" sizes="(max-width: 800px) 800px, 1920px" type="image/webp">
             <img src="../static/Fab.png?width=1000" alt="Fabes asturianas" loading="lazy">
-        </picture>
+        </picture> -->
 
+        <picture class="backgroundImageHeader">
+            <source media="(max-width: 800px)" srcset="../static/Fab800.png?as=webp" type="image/webp">
+            <source media="(max-width: 800px)" srcset="../static/Fab800.png" type="image/png">
+            <source srcset="../static/Fab1920.png?as=webp" type="image/webp">
+            <source srcset="../static/Fab1920.png" type="image/png">
+            <img src="../static/Fab.png" alt="Fabes asturianas" loading="lazy">
+          </picture>
 
         <nav>
             <ul>
@@ -53,8 +60,8 @@
                 <div class="swiper-slide">
                     <figure class = "diapo">
                         <picture>
-                            <source srcset="../static/Quesos.png?as=webp&width=1200" media="(min-width: 1200px)" type="image/webp">
-                            <source srcset="../static/Quesos.png?as=webp&width=768" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="../static/Quesos.png?as=webp&width=1000" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="../static/Quesos.png?as=webp&width=600" media="(min-width: 768px)" type="image/webp">
                             <img src="../static/Quesos.png?as=webp&width=500" alt="Quesos de Mier" loading="lazy">
                         </picture>
                         <figcaption>
@@ -64,8 +71,8 @@
                 <div class="swiper-slide">
                     <figure class="diapo">
                         <picture>
-                            <source srcset="../static/Fab.png?as=webp&width=1200" media="(min-width: 1200px)" type="image/webp">
-                            <source srcset="../static/Fab.png?as=webp&width=768" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="../static/Fab.png?as=webp&width=1000" media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="../static/Fab.png?as=webp&width=600" media="(min-width: 768px)" type="image/webp">
                             <img src="../static/Fab.png?as=webp&width=500" alt="Fabes asturianas" loading="lazy">
                         </picture>
                         <figcaption>
